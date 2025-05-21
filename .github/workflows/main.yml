@@ -3,7 +3,7 @@ name: Run
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 1 * *"  # 每月1号运行一次，可以根据需求调整时间
+    - cron: "14 13 */10 * *"  # 每月1号开始，每10天运行一次，运行时间为13:14
 
 jobs:
   login:
